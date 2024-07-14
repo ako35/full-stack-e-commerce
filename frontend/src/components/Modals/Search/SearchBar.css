@@ -1,0 +1,50 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #DCA47C;
+    border-radius: 25px;
+    padding: 5px;
+    width: 200px; /* İstenilen genişliğe göre ayarlanabilir */
+    transition: width 0.3s ease; /* Genişleme animasyonu */
+  }
+  
+  .search-container:focus-within { /* İçindeki bir öğeye odaklanıldığında */
+    width: 250px; /* Genişliği artır */
+    color: #FCF8F3;
+    border: 1px solid #DCA47C;
+    background-color: #FCF8F3;
+    transition: background-color 0.3s ease;
+    transition: border 0.3s ease;
+    transition: color 0.3s ease;
+    transition: width 0.3s ease;
+  }
+
+  
+  #search-input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    padding: 12px;
+    font-size: 16px;
+    outline: none; /* Odaklanınca mavi çerçeveyi kaldır */
+    padding: 5px 2px; /* Üst ve alt padding eşit olmalı */
+    line-height: 16px; /* font-size ile aynı değerde olmalı */
+    margin-bottom: 0px;
+    margin-left: 12px;
+    color: #698474;
+  }
+  
+  #search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #FFD3B6;
+    opacity: 0.5;
+    transition: color 0.3s ease; /* Renk geçişi animasyonu */
+  }
+  
+  #search-button:hover {
+    opacity: 1;
+  }
+  

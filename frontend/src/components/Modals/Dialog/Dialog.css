@@ -65,12 +65,25 @@
   }
   
   .modal-dialog .modal-content .popup-form label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 5px;
-    font-size: 14px;
+    display: flex;             /* Flexbox kullan */
+    align-items: center;      /* Öğeleri dikeyde ortala */
+    justify-content: flex-start; /* Öğeleri sola yasla */
+    min-height: 20px;       /* Label'a minimum yükseklik verin (20px örnek olarak verilmiştir) */
   }
+  
+  .modal-dialog .modal-content .popup-form label input[type="checkbox"] {
+    flex: 1;                  
+    align-self: center;  
+    margin: auto 0;   
+  }
+  
+  .modal-dialog .modal-content .popup-form label span {
+    flex: 11;
+    text-align: left; /* Metni sola yasla */
+  }
+  
+  
+  
   
   @media (max-width: 576px) {
     .modal-dialog .modal-content {

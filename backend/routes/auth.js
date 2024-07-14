@@ -7,7 +7,6 @@ const generateRandomAvatar = () => {
   const randomAvatar = Math.floor(Math.random() * 71);
   return `https://i.pravatar.cc/300?img=${randomAvatar}`;
 };
-
 // Kullanıcı Oluşturma (Create - Register)
 router.post("/register", async (req, res) => {
   try {

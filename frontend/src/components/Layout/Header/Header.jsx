@@ -3,6 +3,8 @@ import Proptypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 import { CartContext } from "../../../context/CartProvider";
 import "./Header.css";
+import SearchBar from "../../Modals/Search/SearchBar";
+import logo from '../../../img/logo.png';
 
 const Header = ({ setIsSearchShow }) => {
   const { cartItems } = useContext(CartContext);
@@ -14,9 +16,8 @@ const Header = ({ setIsSearchShow }) => {
       <div className="global-notification">
         <div className="container">
           <p>
-            SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL
-            DELIVERY - OFF 50%!
-            <a href="shop.html"> SHOP NOW</a>
+              200 TL ve Üzeri Alışverişlerinizde Kargo Ücretsiz!
+            <a href="shop.html"> ŞİMDİ ALIŞVERİŞ YAP</a>
           </p>
         </div>
       </div>
@@ -28,7 +29,7 @@ const Header = ({ setIsSearchShow }) => {
             </div>
             <div className="header-left">
               <Link to={"/"} className="logo">
-                LOGO
+              <img src={logo} alt="Logo" />
               </Link>
             </div>
             <div className="header-center" id="sidebar">
@@ -39,10 +40,10 @@ const Header = ({ setIsSearchShow }) => {
                       to={"/"}
                       className={`menu-link ${pathname === "/" && "active"}`}
                     >
-                      Home
-                      <i className="bi bi-chevron-down"></i>
+                      Anasayfa
+                      {/*<i className="bi bi-chevron-down"></i>*/}
                     </Link>
-                    <div className="menu-dropdown-wrapper">
+                   {/* <div className="menu-dropdown-wrapper">
                       <ul className="menu-dropdown-content">
                         <li>
                           <a href="#">Home Clean</a>
@@ -72,7 +73,7 @@ const Header = ({ setIsSearchShow }) => {
                           <a href="#">Home RTL</a>
                         </li>
                       </ul>
-                    </div>
+                    </div>*/}
                   </li>
                   <li className="menu-list-item megamenu-wrapper">
                     <Link
@@ -81,7 +82,7 @@ const Header = ({ setIsSearchShow }) => {
                         pathname === "/shop" && "active"
                       }`}
                     >
-                      Shop
+                      Ürünler
                       <i className="bi bi-chevron-down"></i>
                     </Link>
                     <div className="menu-dropdown-wrapper">
@@ -89,80 +90,56 @@ const Header = ({ setIsSearchShow }) => {
                         <div className="megamenu-links">
                           <div className="megamenu-products">
                             <h3 className="megamenu-products-title">
-                              Shop Style
+                              Takı
                             </h3>
                             <ul className="megamenu-menu-list">
                               <li>
-                                <a href="#">Shop Standard</a>
+                                <a href="#">Yüzük</a>
                               </li>
                               <li>
-                                <a href="#">Shop Full</a>
+                                <a href="#">Kolye</a>
                               </li>
                               <li>
-                                <a href="#">Shop Only Categories</a>
+                                <a href="#">Bileklik</a>
                               </li>
-                              <li>
-                                <a href="#">Shop Image Categories</a>
-                              </li>
-                              <li>
-                                <a href="#">Shop Sub Categories</a>
-                              </li>
-                              <li>
-                                <a href="#">Shop List</a>
-                              </li>
-                              <li>
-                                <a href="#">Hover Style 1</a>
-                              </li>
-                              <li>
-                                <a href="#">Hover Style 2</a>
-                              </li>
-                              <li>
-                                <a href="#">Hover Style 3</a>
-                              </li>
+                              
                             </ul>
                           </div>
                           <div className="megamenu-products">
                             <h3 className="megamenu-products-title">
-                              Filter Layout
+                              Toka
                             </h3>
                             <ul className="megamenu-menu-list">
                               <li>
-                                <a href="#">Sidebar</a>
+                                <a href="#">Çocuk Tokaları</a>
                               </li>
                               <li>
-                                <a href="#">Filter Side Out</a>
+                                <a href="#">Kadın Tokaları</a>
                               </li>
                               <li>
-                                <a href="#">Filter Dropdown</a>
+                                <a href="#">Lastik Tokalar </a>
                               </li>
-                              <li>
-                                <a href="#">Filter Drawer</a>
-                              </li>
+
                             </ul>
                           </div>
                           <div className="megamenu-products">
                             <h3 className="megamenu-products-title">
-                              Shop Loader
+                              Çanta
                             </h3>
                             <ul className="megamenu-menu-list">
                               <li>
-                                <a href="#">Shop Pagination</a>
+                                <a href="#">Büyük Çanta</a>
                               </li>
                               <li>
-                                <a href="#">Shop Infinity</a>
+                                <a href="#">Kucuk Çanta</a>
                               </li>
                               <li>
-                                <a href="#">Shop Load More</a>
+                                <a href="#">Makyaj Çantası</a>
                               </li>
                               <li>
-                                <a href="#">Cart Modal</a>
+                                <a href="#">Telefon Çantası</a>
                               </li>
-                              <li>
-                                <a href="#">Cart Drawer</a>
-                              </li>
-                              <li>
-                                <a href="#">Cart Page</a>
-                              </li>
+                              
                             </ul>
                           </div>
                         </div>
@@ -171,16 +148,16 @@ const Header = ({ setIsSearchShow }) => {
                             <img src="/img/mega-menu.jpg" alt="" />
                           </a>
                           <h3 className="megamenu-single-title">
-                            JOIN THE LAYERING GANG
+                            FIRSAT  ÜRÜNÜ
                           </h3>
                           <h4 className="megamenu-single-subtitle">
-                            Suspendisse faucibus nunc et pellentesque
+                            Ağustos ayı boyunca indirimde
                           </h4>
                           <a
                             href="#"
                             className="megamenu-single-button btn btn-sm"
                           >
-                            Shop Now
+                            Şimdi alışveriş yap! 
                           </a>
                         </div>
                       </div>
@@ -211,19 +188,22 @@ const Header = ({ setIsSearchShow }) => {
               <i className="bi-x-circle" id="close-sidebar"></i>
             </div>
             <div className="header-right">
+            
               <div className="header-right-links">
-                <Link to={"/auth"} className="header-account">
-                  <i className="bi bi-person"></i>
-                </Link>
-                <button
+                <SearchBar />
+              {/*<button
                   className="search-button"
                   onClick={() => setIsSearchShow(true)}
                 >
                   <i className="bi bi-search"></i>
-                </button>
-                {/* <a href="#">
+                </button>*/}
+                <Link to={"/auth"} className="header-account">
+                  <i className="bi bi-person"></i>
+                </Link>
+               
+                { <a href="#">
                   <i className="bi bi-heart"></i>
-                </a> */}
+                </a> }
                 <div className="header-cart">
                   <Link to={"/cart"} className="header-cart-link">
                     <i className="bi bi-bag"></i>
@@ -232,25 +212,7 @@ const Header = ({ setIsSearchShow }) => {
                     </span>
                   </Link>
                 </div>
-                {user && (
-                  <button
-                    className="search-button"
-                    onClick={() => {
-                      if (
-                        window.confirm(
-                          "Çıkış yapmak istediğinize emin misiniz?"
-                        )
-                      ) {
-                        {
-                          localStorage.removeItem("user");
-                          window.location.href = "/";
-                        }
-                      }
-                    }}
-                  >
-                    <i className="bi bi-box-arrow-right"></i>
-                  </button>
-                )}
+                
               </div>
             </div>
           </div>

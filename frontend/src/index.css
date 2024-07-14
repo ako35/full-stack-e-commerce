@@ -21,7 +21,7 @@ ol {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #698474;
 }
 
 h1,
@@ -61,7 +61,7 @@ button:disabled {
   padding: 0 25px;
   line-height: 40px;
   font-weight: 500;
-  border: 1px solid black;
+  border: 1px solid #698474;
   transition: 0.2s ease all;
 }
 
@@ -74,14 +74,14 @@ button:disabled {
 }
 
 .btn-primary {
-  background-color: #1367ef;
-  color: #fff;
-  border-color: #1367ef;
+  background-color: #DCA47C;
+  color: #FCF8F3;
+  border-color: #DCA47C;
 }
 
 .btn-primary:hover {
-  background-color: #fff;
-  color: #1367ef;
+  background-color: #FCF8F3;
+  color: #DCA47C;
 }
 
 textarea {
@@ -94,7 +94,7 @@ input[type="email"],
 input[type="number"],
 textarea {
   outline: none;
-  border: 1px solid #dee0ea;
+  border: 1px solid #FCF8F3;
   padding: 8px 8px 8px 15px;
 }
 
@@ -103,7 +103,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
 textarea:focus {
-  border-color: gray;
+  border-color: #698474;
 }
 
 input[type="number"]::-webkit-inner-spin-button {

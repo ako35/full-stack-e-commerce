@@ -66,7 +66,9 @@ const UserPage = () => {
 
       if (response.ok) {
         const data = await response.json();
-        setDataSource(data);
+        // Role'ü "admin" olanları filtrele
+        const filteredData = data.filter(user => user.role !== "admin");
+        setDataSource(filteredData);
       } else {
         message.error("Veri getirme başarısız.");
       }

@@ -50,7 +50,7 @@ const Login = () => {
         <div>
           <label>
             <span>
-              Username or email address <span className="required">*</span>
+              Email Address <span className="required">*</span>
             </span>
             <input type="text" name="email" onChange={handleInputChange} required />
           </label>

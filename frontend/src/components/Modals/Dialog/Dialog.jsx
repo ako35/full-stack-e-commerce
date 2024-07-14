@@ -20,18 +20,17 @@ const Dialog = ({ isDialogShow, setIsDialogShow }) => {
         <div className="popup-wrapper">
           <div className="popup-content">
             <div className="popup-title">
-              <h3>NEWSLETTER</h3>
+              <h3>E-BÜLTEN</h3>
             </div>
             <p className="popup-text">
-              Sign up to our newsletter and get exclusive deals you won find any
-              where else straight to your inbox!
+            E-bültenimize kaydolun ve başka hiçbir yerde bulamayacağınız özel fırsatları doğrudan gelen kutunuza alın!
             </p>
             <form className="popup-form">
-              <input type="text" placeholder="Enter Email Address Here" />
-              <button className="btn btn-primary">SUBSCRIBE</button>
+              <input type="text" placeholder="Email adresinizi giriniz" />
+              <button className="btn btn-primary">ABONE OL</button>
               <label>
                 <input type="checkbox" onChange={handleCloseDialog} />
-                <span>Don`t show this popup again</span>
+                <span>Bu pencereyi bir daha gösterme</span>
               </label>
             </form>
           </div>

@@ -17,7 +17,7 @@ import CreateProductPage from "./pages/Admin/Products/CreateProductPage";
 import ProductPage from "./pages/Admin/Products/ProductPage";
 import UpdateProductPage from "./pages/Admin/Products/UpdateProductPage";
 import CouponPage from "./pages/Admin/Coupons/CouponPage";
-import CreateCouponPage from "./pages/Admin/Coupons/CreateCouponPage";
+import CustomerFormPage from "./pages/Admin/Coupons/CustomerFormPage";
 import UpdateCouponPage from "./pages/Admin/Coupons/UpdateCouponPage";
 import Success from "./pages/Success";
 import OrderPage from "./pages/Admin/OrderPage";
@@ -45,7 +45,7 @@ function App() {
         <Route path="products/create" element={<CreateProductPage />} />
         <Route path="products/update/:id" element={<UpdateProductPage />} />
         <Route path="coupons" element={<CouponPage />} />
-        <Route path="coupons/create" element={<CreateCouponPage />} />
+        <Route path="coupons/create" element={<CustomerFormPage />} />
         <Route path="coupons/update/:id" element={<UpdateCouponPage />} />
         <Route path="orders" element={<OrderPage />} />
       </Route>

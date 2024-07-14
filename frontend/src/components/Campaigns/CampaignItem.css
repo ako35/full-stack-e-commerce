@@ -18,21 +18,41 @@
   }
   
   .campaigns-wrapper:nth-child(1) .campaign-item:nth-child(1) {
-    background-image: url(../../img/campaigns/banner1.png);
+    background-image: url(../../img/campaigns/kolye.jpg);
+  }
+
+  .campaigns-wrapper:nth-child(1) .campaign-item:nth-child(1) .campaign-title::after{
+    color:#FCF8F3;
+    content: 'Kolye Koleksiyonu';
   }
   
   .campaigns-wrapper:nth-child(1) .campaign-item:nth-child(2) {
-    background-image: url(../../img/campaigns/banner2.png);
+    background-image: url(../../img/campaigns/canta.jpg);
+  }
+
+  .campaigns-wrapper:nth-child(1) .campaign-item:nth-child(2) .campaign-title::after{
+    color:#FCF8F3;
+    content: 'Çanta Koleksiyonu';
   }
   
   .campaigns-wrapper:nth-child(2) .campaign-item:nth-child(1) {
-    background-image: url(../../img/campaigns/banner3.png);
+    background-image: url(../../img/campaigns/yuzuk.jpg);
     flex: 5;
+  }
+
+  .campaigns-wrapper:nth-child(2) .campaign-item:nth-child(1) .campaign-title::after{
+    color:#FCF8F3;
+    content: 'Yüzük Koleksiyonu';
   }
   
   .campaigns-wrapper:nth-child(2) .campaign-item:nth-child(2) {
-    background-image: url(../../img/campaigns/banner4.png);
+    background-image: url(../../img/campaigns/toka.webp);
     flex: 3;
+  }
+
+  .campaigns-wrapper:nth-child(2) .campaign-item:nth-child(2) .campaign-title::after{
+    color:#FCF8F3;
+    content: 'Toka Koleksiyonu';
   }
   
   @media (max-width: 768px) {

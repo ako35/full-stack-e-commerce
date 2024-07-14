@@ -8,30 +8,40 @@
     display: flex;
     align-items: center;
   }
+
+  .slider-item ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #DCA47C;
+    opacity: 0.2;
+    mix-blend-mode: multiply; /* Renkleri karıştırma modu */
+  }
   
   .slider-item .slider-image img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
-    object-fit: cover;
-    object-position: 60%;
+    object-fit: fill;
+    object-position: center;
     z-index: -1;
-  }
-  
-  .slider-item .slider-title {
-    font-size: 18px;
-    font-weight: 500;
   }
   
   .slider-item .slider-heading {
     font-size: 60px;
     font-weight: 600;
+    color: #698474;
   }
   
   .slider-item a {
     position: relative;
     z-index: 1;
+    color:#FCF8F3;
+    border-radius: 5px;
   }
   
   .slider .slider-buttons {
@@ -50,17 +60,17 @@
     width: 60px;
     height: 60px;
     border-radius: 100%;
-    border: 1px solid #dee0ea;
-    background-color: white;
+    border: 1px solid #FCF8F3;
+    background-color: #698474;
     opacity: 0.5;
     transition: 0.2s ease all;
   }
   
   .slider-buttons button:hover {
-    background-color: #1367ef;
+    background-color: #FCF8F3;
     opacity: 1;
-    color: #fff;
-    border-color: #1367ef;
+    color: #698474;
+    border-color: #698474;
   }
   
   .slider-buttons button i {
@@ -75,10 +85,14 @@
     align-items: center;
     justify-content: center;
     column-gap: 6px;
+    color: #698474;
   }
   
   .slider .slider-dots .slider-dot {
-    border: none;
+    border: 1px solid #698474;
+    border-radius: 5%;
+    color: #698474;
+    background-color: #698474;
     display: flex;
     opacity: 0.4;
     transition: 0.2s ease opacity;
@@ -92,7 +106,8 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    background-color: #1367ef;
+    color: #DCA47C;
+    background-color: #DCA47C;
     border-radius: 100%;
   }
   

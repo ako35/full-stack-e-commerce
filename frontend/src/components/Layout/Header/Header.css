@@ -1,16 +1,22 @@
 /*! header start  */
 
 header {
-    border-bottom: 1px solid #dee0ea;
+    border-bottom: 1px solid #FCF8F3;
     position: sticky;
     width: 100%;
     top: 0;
-    background: #fff;
+    background: #FCF8F3;
     z-index: 10;
   }
+
+  .logo img {
+    max-width: 100%;  /* Resmin genişliği en fazla kapsayıcısının genişliği kadar olsun */
+    height: 90px; /* Resmin yüksekliği en fazla kapsayıcısının yüksekliği kadar olsun */
+  }
+  
   
   .global-notification {
-    background-color: #1367ef;
+    background-color: #DCA47C;
     padding: 14px 0;
     text-align: center;
     font-size: 12px;
@@ -100,9 +106,12 @@ header {
   }
   
   .header-right .search-button {
-    border: none;
+    border: 1px solid #dee0ea;
+    border-radius: 1px;
     background-color: transparent;
   }
+
+
   
   .header-right i {
     font-size: 18px;
@@ -116,7 +125,7 @@ header {
   .header-right .header-cart-link .header-cart-count {
     width: 16px;
     height: 16px;
-    background-color: #1367ef;
+    background-color: #DCA47C;
     color: white;
     font-size: 10px;
     border-radius: 100%;
@@ -218,6 +227,13 @@ header {
   
   .megamenu-wrapper .megamenu-single-button {
     margin-top: 5px;
+  }
+
+  .megamenu-wrapper .megamenu-single-button:hover {
+    background-color: #1367ef;
+    opacity: 1;
+    color: #fff;
+    border-color: #1367ef;
   }
   
   /*? menu dropdown end  */

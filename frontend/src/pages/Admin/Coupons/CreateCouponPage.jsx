@@ -1,5 +1,6 @@
 import { Button, Form, Input, InputNumber, Spin, message } from "antd";
 import { useState } from "react";
+import CustomerFormPage from "./CustomerFormPage"
 
 const CreateCouponPage = () => {
   const [loading, setLoading] = useState(false);
@@ -58,7 +59,7 @@ const CreateCouponPage = () => {
         >
           <InputNumber />
         </Form.Item>
-
+          <CustomerFormPage/>
         <Button type="primary" htmlType="submit">
           Oluştur
         </Button>

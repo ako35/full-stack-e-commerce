@@ -7,10 +7,9 @@ const SliderItem = ({ imageSrc }) => {
         <img src={imageSrc} className="img-fluid" alt="" />
       </div>
       <div className="container">
-        <p className="slider-title">SUMMER 2022</p>
-        <h2 className="slider-heading">Save up to 70%</h2>
+        <h1 className="slider-heading">KOLEKSİYONU KEŞFET</h1>
         <a href="#" className="btn btn-lg btn-primary">
-          Explore Now
+          Şimdi Keşfet
         </a>
       </div>
     </div>
